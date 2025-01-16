@@ -26,8 +26,11 @@ import {
   tripguide,
   threejs,
   Ant,
+  Mui,
+  Github,
 } from "../assets";
-import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer } from "react-icons/si";
+import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -115,7 +118,11 @@ const technologies = [
   },
   {
     name: "git",
-    icon: git,
+    icon: Github,
+  },
+  {
+    name: "Material Ui",
+    icon: Mui,
   },
   // {
   //   name: "figma",
@@ -130,8 +137,8 @@ const technologies = [
 const experiences = [
   {
     title: "HTML",
-    icon:  SiHtml5, 
-    iconBg: "#E34C26",
+    icon:  html, 
+    iconBg: "#fff",
     points: [
       "Learned the foundational structure of web pages using HTML.",
       "Gained knowledge about semantic elements and web accessibility.",
@@ -140,8 +147,8 @@ const experiences = [
   },
   {
     title: "CSS",
-    icon: SiCss3, 
-    iconBg: "#1572B6",
+    icon: css, 
+    iconBg: "#fff",
     points: [
       "Developed skills to style and layout web pages using CSS.",
       "Learned responsive design techniques for better user experience.",
@@ -150,7 +157,7 @@ const experiences = [
   },
   {
     title: "JavaScript",
-    icon: SiJavascript, 
+    icon: javascript, 
     iconBg: "#F7DF1E",
     points: [
       "Acquired programming logic with JavaScript for dynamic web functionalities.",
@@ -160,8 +167,8 @@ const experiences = [
   },
   {
     title: "Tailwind CSS",
-    icon: SiTailwindcss, 
-    iconBg: "#38B2AC",
+    icon: tailwind, 
+    iconBg: "#fff",
     points: [
       "Mastered utility-first CSS framework for rapid UI development.",
       "Built responsive and modern layouts with Tailwind's pre-built utilities.",
@@ -170,8 +177,8 @@ const experiences = [
   },
   {
     title: "React.js",
-    icon: SiReact, 
-    iconBg: "#61DAFB",
+    icon: reactjs, 
+    iconBg: "#333",
     points: [
       "Built dynamic and component-based web applications using React.",
       "Learned state management and props for better application workflows.",
@@ -180,8 +187,8 @@ const experiences = [
   },
   {
     title: "Framer-Motion",
-    icon: SiFramer, 
-    iconBg: "#0055FF",
+    icon: framer, 
+    iconBg: "#333444",
     points: [
       "Enhanced user experience by adding smooth animations with Framer Motion.",
       "Implemented interactive transitions for visually appealing interfaces.",
@@ -189,13 +196,33 @@ const experiences = [
     ],
   },
   {
+    title: "Github",
+    icon: Github,
+    iconBg: "#eee",
+    points: [
+      "Learned version control and collaboration using Git.",
+      "Managed code repositories and tracked changes effectively.",
+      "Collaborated with teams on projects through Git workflows like branching and merging."
+    ],
+  },
+  {
     title: "Ant Design",
-    icon: SiAntdesign, 
-    iconBg: "#0170FE",
+    icon: Ant, 
+    iconBg: "#333444",
     points: [
       "Built professional-grade user interfaces using Ant Design components.",
       "Streamlined design processes with pre-built, customizable UI elements.",
       "Focused on creating scalable and consistent design systems."
+    ],
+  },
+  {
+    title: "Material-UI",
+    icon: Mui,
+    iconBg: "#333",
+    points: [
+      "Built user interfaces with Material-UI for React applications.",
+      "Implemented responsive design using Material-UI’s grid system and components.",
+      "Customized Material-UI themes for consistent and modern designs."
     ],
   },
 ];
@@ -229,9 +256,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HealthDoc",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A professionally crafted healthcare web interface featuring responsive design, dynamic animations, and an intuitive user experience.",
     tags: [
       {
         name: "react",
@@ -250,9 +277,9 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Brainwave",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A visually appealing and modern web application designed with dynamic styling and responsive layouts for seamless performance across all screen sizes",
     tags: [
       {
         name: "react",

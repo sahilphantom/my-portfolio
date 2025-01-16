@@ -22,6 +22,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import framer from "./tech/framer-motion.svg";
 import Ant from "./tech/ant-design.svg";
+import Github from './tech/GitHub.svg';
+import Mui from "./tech/Material-UI.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -63,4 +65,6 @@ export {
   tripguide,
   framer,
   Ant,
+  Github,
+  Mui,
 };

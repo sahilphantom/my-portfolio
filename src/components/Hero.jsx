@@ -18,9 +18,9 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Sahil</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 absolute z-50`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 absolute z-5`}>
           I am a frontend developer passionate about creating  <br className='sm:block hidden' />
-          dynamic web applications
+          dynamic web apps.
           </p>
         </div>
       </div>
