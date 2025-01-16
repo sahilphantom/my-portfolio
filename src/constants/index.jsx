@@ -130,7 +130,7 @@ const technologies = [
 const experiences = [
   {
     title: "HTML",
-    icon:  SiHtml5, 
+    icon:  <SiHtml5/>, 
     iconBg: "#E34C26",
     points: [
       "Learned the foundational structure of web pages using HTML.",
@@ -140,7 +140,7 @@ const experiences = [
   },
   {
     title: "CSS",
-    icon: SiCss3, 
+    icon: <SiCss3/>, 
     iconBg: "#1572B6",
     points: [
       "Developed skills to style and layout web pages using CSS.",
@@ -150,7 +150,7 @@ const experiences = [
   },
   {
     title: "JavaScript",
-    icon: SiJavascript, 
+    icon: <SiJavascript/>, 
     iconBg: "#F7DF1E",
     points: [
       "Acquired programming logic with JavaScript for dynamic web functionalities.",
@@ -160,7 +160,7 @@ const experiences = [
   },
   {
     title: "Tailwind CSS",
-    icon: SiTailwindcss, 
+    icon: <SiTailwindcss/>, 
     iconBg: "#38B2AC",
     points: [
       "Mastered utility-first CSS framework for rapid UI development.",
@@ -170,7 +170,7 @@ const experiences = [
   },
   {
     title: "React.js",
-    icon: SiReact, 
+    icon: <SiReact/>, 
     iconBg: "#61DAFB",
     points: [
       "Built dynamic and component-based web applications using React.",
@@ -180,7 +180,7 @@ const experiences = [
   },
   {
     title: "Framer-Motion",
-    icon: SiFramer, 
+    icon: <SiFramer/>, 
     iconBg: "#0055FF",
     points: [
       "Enhanced user experience by adding smooth animations with Framer Motion.",
@@ -190,7 +190,7 @@ const experiences = [
   },
   {
     title: "Ant Design",
-    icon: SiAntdesign, 
+    icon: <SiAntdesign/>, 
     iconBg: "#0170FE",
     points: [
       "Built professional-grade user interfaces using Ant Design components.",
