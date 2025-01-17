@@ -188,7 +188,7 @@ const experiences = [
   {
     title: "Framer-Motion",
     icon: framer, 
-    iconBg: "#333444",
+    iconBg: "#000",
     points: [
       "Enhanced user experience by adding smooth animations with Framer Motion.",
       "Implemented interactive transitions for visually appealing interfaces.",
@@ -208,7 +208,7 @@ const experiences = [
   {
     title: "Ant Design",
     icon: Ant, 
-    iconBg: "#333",
+    iconBg: "#000",
     points: [
       "Built professional-grade user interfaces using Ant Design components.",
       "Streamlined design processes with pre-built, customizable UI elements.",
@@ -218,7 +218,7 @@ const experiences = [
   {
     title: "Material-UI",
     icon: Mui,
-    iconBg: "#333",
+    iconBg: "#000",
     points: [
       "Built user interfaces with Material-UI for React applications.",
       "Implemented responsive design using Material-UI’s grid system and components.",
