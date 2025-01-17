@@ -208,7 +208,7 @@ const experiences = [
   {
     title: "Ant Design",
     icon: Ant, 
-    iconBg: "#333444",
+    iconBg: "#333",
     points: [
       "Built professional-grade user interfaces using Ant Design components.",
       "Streamlined design processes with pre-built, customizable UI elements.",
