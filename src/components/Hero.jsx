@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative bg-[#000] w-full h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -18,9 +18,9 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Sahil</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 absolute z-5`}>
+          <p className={` mt-2 text-white-100 text-[1.5rem] absolute z-5`}>
           I am a frontend developer passionate about creating  <br className='sm:block hidden' />
-          dynamic web apps.
+          dynamic web experiences.  <br className='sm:block hidden' />
           </p>
         </div>
       </div>
@@ -49,5 +49,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
