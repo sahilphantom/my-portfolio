@@ -33,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_jm8heg9", // Your Service ID
+        "template_mkn5ymj", // Your Template ID
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Sahil Mahmood",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "sahilmahmood188@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "wW1JIf4AHfSS-QUnt" // Your Public Key
       )
       .then(
         () => {
@@ -78,7 +78,7 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12  flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
