@@ -30,10 +30,10 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-[#121212]" : "bg-[#000] border-solid border-b-2 border-[#915EFF] "
       }`}
     >
-      <div className='w-[80%] flex justify-between items-center max-w-7xl mx-auto'>
+      <div className='w-[90%] flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
           className='flex items-center gap-2'
@@ -64,37 +64,40 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
-          />
+  <img
+    src={toggle ? close : menu}
+    alt='menu'
+    className='w-[28px] h-[28px] object-contain cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110'
+    onClick={() => setToggle(!toggle)} 
+  />
 
-          <div
-            className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
-          >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <div
+    className={`${
+      !toggle ? "hidden" : "flex"
+    } p-12 bg-[#121212] absolute top-20 left-0 w-full h-auto z-10 rounded-b-xl shadow-lg transform transition-all duration-300 ease-in-out`}
+  >
+    <ul className='list-none  flex justify-start items-start flex-1 flex-col gap-4'>
+      {navLinks.map((nav) => (
+        <li
+          key={nav.id}
+          className={`font-poppins mb-2  font-medium cursor-pointer text-[16px] ${
+            active === nav.title ? "text-white" : "text-secondary"
+          } transition-colors duration-200 ease-in-out hover:text-white`}
+          onClick={() => {
+            setToggle(!toggle);
+            setActive(nav.title);
+          }}
+        >
+          <a href={`#${nav.id}`}>{nav.title}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+
         </div>
-      </div>
+      
     </nav>
   );
 };
