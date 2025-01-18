@@ -74,7 +74,7 @@ import { SectionWrapper } from "../hoc";
 
 const About = () => {
   return (
-    <div className="py-20 flex flex-col items-start justify-start bg-[#000] dark:bg-black w-full gap-4 mx-auto px-8">
+    <div className="py-8 flex flex-col items-start justify-start bg-[#000] dark:bg-black w-full gap-4 mx-auto px-8">
       {/* Intro Section */}
       <motion.div variants={textVariant()}  >
         <p className={styles.sectionSubText}>Introduction</p>
