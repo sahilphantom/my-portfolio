@@ -28,6 +28,8 @@ import {
   Ant,
   Mui,
   Github,
+  Hdoc,
+  Bwave,
 } from "../assets";
 import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -265,16 +267,21 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Framer Motion",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "react-router-dom",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Hdoc,
+    source_code_link: "https://github.com/sahilphantom/Healthdoc",
+    live_demo_link:"https://healthdoc12.netlify.app/",
   },
   {
     name: "Brainwave",
@@ -286,38 +293,23 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Framer Motion",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "react-router-dom",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Bwave,
+    source_code_link: "https://github.com/sahilphantom/brainwave",
+    live_demo_link:"https://brainwavesm.netlify.app/",
   },
+ 
 ];
 
 export { services, technologies, experiences, testimonials, projects };
