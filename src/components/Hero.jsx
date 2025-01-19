@@ -5,7 +5,7 @@ import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className={`relative bg-transparent  mb-8 w-full h-screen mx-auto `}>
+    <section className={`relative bg-transparent border-solid border-b-2 border-[#915EFF]   mb-8 w-full h-screen mx-auto  `}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
