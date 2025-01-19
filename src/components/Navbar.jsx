@@ -30,7 +30,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-tertiary" : "bg-[#000] border-solid border-b-2 border-[#915EFF] "
+        scrolled ? "bg-[#000] border-solid border-b-2 border-[#915EFF]" : "bg-[#000] border-solid border-b-2 border-[#915EFF] "
       }`}
     >
       <div className='w-[90%] flex justify-between items-center max-w-7xl mx-auto'>
@@ -74,7 +74,7 @@ const Navbar = () => {
   <div
     className={`${
       !toggle ? "hidden" : "flex"
-    } p-12 bg-tertiary absolute top-20 left-0 w-full h-auto z-10 rounded-b-xl shadow-lg transform transition-all duration-300 ease-in-out`}
+    } p-12 bg-[#000] absolute top-20 left-0 w-full h-auto z-10 rounded-b-xl shadow-lg transform transition-all duration-300 ease-in-out`}
   >
     <ul className='list-none  flex justify-start items-start flex-1 flex-col gap-4'>
       {navLinks.map((nav) => (
