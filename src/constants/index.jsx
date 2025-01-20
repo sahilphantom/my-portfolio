@@ -1,23 +1,25 @@
 import { motion } from "framer-motion";
 import {
   mobile,
-  backend,
-  creator,
-  web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
   redux,
   tailwind,
   framer,
-  threejs,
   Ant,
   Mui,
   Github,
   Hdoc,
   Bwave,
+  img1,
+  img3,
+  img2,
+  img4,
+  web,
+  backend,
+  creator,
 } from "../assets";
 import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -64,16 +66,12 @@ const technologies = [
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: img1,
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: img3,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -84,20 +82,9 @@ const technologies = [
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: img2,
   },
-  // {
-  //   name: "Node JS",
-  //   icon: nodejs,
-  // },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+ 
   {
     name: "Framer Motion",
     icon: framer,
@@ -108,20 +95,12 @@ const technologies = [
   },
   {
     name: "git",
-    icon: Github,
+    icon: img4,
   },
   {
     name: "Material Ui",
     icon: Mui,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const experiences = [
