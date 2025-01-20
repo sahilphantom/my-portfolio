@@ -243,7 +243,7 @@ const projects = [
       },
       {
         name: "react-router-dom",
-        color: "blue-text-gradient",
+        color: "violet-gradient",
       },
     ],
     image: Hdoc,
@@ -269,7 +269,7 @@ const projects = [
       },
       {
         name: "react-router-dom",
-        color: "blue-text-gradient",
+        color: "violet-gradient",
       },
     ],
     image: Bwave,
