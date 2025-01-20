@@ -73,6 +73,9 @@ import { SectionWrapper } from "../hoc";
 
 
 const About = () => {
+  const openResume = () => {
+    window.open("file:///C:/Users/Mg/Downloads/Sahil%20Resume.pdf")
+  }
   return (
     <div className="py-8 flex flex-col items-start justify-start bg-[#000] dark:bg-black w-full gap-4 mx-auto px-8">
       {/* Intro Section */}
@@ -89,6 +92,18 @@ const About = () => {
         I specialize in creating dynamic, responsive, and visually appealing web applications.
         Let's collaborate to turn your ideas into seamless digital experiences!
       </motion.p>
+      <motion.div variants={fadeIn("", "", 0.2, 1)}>
+        {/* View Resume Button */}
+      <a
+        href="/Sahil_Resume.pdf" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+      >
+        <button className="bg-[#915EFF] text-white-100 py-2 px-4 rounded-md mb-4">
+          View Resume
+        </button>
+      </a>
+      </motion.div>
 
       {/* Cards Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4 w-full">
