@@ -95,7 +95,7 @@ const About = () => {
       <motion.div variants={fadeIn("", "", 0.2, 1)}>
         {/* View Resume Button */}
       <a
-        href="/Sahil_Resume.pdf" 
+        href="https://drive.google.com/file/d/1HnSW_9-VoW6B0Xo7cNTIhjSk_xtQi0Xk/view" 
         target="_blank" 
         rel="noopener noreferrer" 
       >
