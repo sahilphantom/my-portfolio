@@ -70,7 +70,7 @@ import { Asterisk } from 'lucide-react';
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import Sahil_cv from "../../public/Sahil_cv.pdf"
+import Sahil_cv from "../../public/Sahil's_cv.pdf"
 // console.log(SahilCV)
 const About = () => {
   const openResume = () => {
@@ -92,13 +92,15 @@ const About = () => {
         I specialize in creating dynamic, responsive, and visually appealing web applications.
         Let's collaborate to turn your ideas into seamless digital experiences!
       </motion.p>
-      <motion.div variants={fadeIn("", "", 0.2, 1)}>
+      <motion.div  variants={fadeIn("", "", 0.2, 1)} className="mb-4">
         {/* View Resume Button */}
         <a
   href={Sahil_cv}
   download="Sahil CV"
   target="_blank" 
   rel="noopener noreferrer"
+  className="bg-[#915EFF] text-white-100 px-4 py-2 rounded-md mb-8"
+
 >
   View Resume
 </a>
