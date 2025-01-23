@@ -70,8 +70,8 @@ import { Asterisk } from 'lucide-react';
 import { fadeIn, textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-
-
+import Sahil_cv from "../../public/Sahil_cv.pdf"
+// console.log(SahilCV)
 const About = () => {
   const openResume = () => {
     window.open("file:///C:/Users/Mg/Downloads/Sahil%20Resume.pdf")
@@ -94,15 +94,15 @@ const About = () => {
       </motion.p>
       <motion.div variants={fadeIn("", "", 0.2, 1)}>
         {/* View Resume Button */}
-      <a
-        href="https://drive.google.com/file/d/1HnSW_9-VoW6B0Xo7cNTIhjSk_xtQi0Xk/view" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-      >
-        <button className="bg-[#915EFF] text-white-100 py-2 px-4 rounded-md mb-4">
-          View Resume
-        </button>
-      </a>
+        <a
+  href={Sahil_cv}
+  download="Sahil CV"
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  View Resume
+</a>
+
       </motion.div>
 
       {/* Cards Section */}
