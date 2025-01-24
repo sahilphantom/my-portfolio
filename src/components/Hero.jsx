@@ -4,12 +4,13 @@ import React, { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 
 import { styles } from "../styles"
-// import BackgroundBeams from "./BackgroundBeams"
+import BackgroundLines from "./BackgroundLines"
 
 const Hero = () => {
 
   return (
-    <section className={`relative border-solid border-b-2 border-[#915EFF]  w-full h-screen mx-auto`}>
+    <section className={`relative border-solid border-b-2 border-[#915EFF]  w-full h-screen mx-auto overflow-hidden`}>
+<BackgroundLines />
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -23,13 +24,13 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Sahil</span>
           </h1>
           <p className={` mt-2 text-white-100 text-[1.5rem] absolute z-5`}>
-          I am a frontend developer passionate about creating  <br className='sm:block hidden' />
-          dynamic web experiences.  <br className='sm:block hidden' />
+          I create visually stunning and interactive web applications  <br className='sm:block hidden' />
+          as a frontend developer.  <br className='sm:block hidden' />
+           
           </p>
         </div>
       </div>
-    {/* <BackgroundBeams /> */}
-
+     
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
