@@ -20,6 +20,8 @@ import {
   web,
   backend,
   creator,
+  nexa,
+  dangila,
 } from "../assets";
 import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -97,10 +99,10 @@ const technologies = [
     name: "git",
     icon: img4,
   },
-  {
-    name: "Material Ui",
-    icon: Mui,
-  },
+  // {
+  //   name: "Material Ui",
+  //   icon: Mui,
+  // },
 ];
 
 const experiences = [
@@ -184,16 +186,16 @@ const experiences = [
       "Focused on creating scalable and consistent design systems."
     ],
   },
-  {
-    title: "Material-UI",
-    icon: Mui,
-    iconBg: "#000",
-    points: [
-      "Built user interfaces with Material-UI for React applications.",
-      "Implemented responsive design using Material-UI’s grid system and components.",
-      "Customized Material-UI themes for consistent and modern designs."
-    ],
-  },
+  // {
+  //   title: "Material-UI",
+  //   icon: Mui,
+  //   iconBg: "#000",
+  //   points: [
+  //     "Built user interfaces with Material-UI for React applications.",
+  //     "Implemented responsive design using Material-UI’s grid system and components.",
+  //     "Customized Material-UI themes for consistent and modern designs."
+  //   ],
+  // },
 ];
 
 const testimonials = [
@@ -275,6 +277,55 @@ const projects = [
     image: Bwave,
     source_code_link: "https://github.com/sahilphantom/brainwave",
     live_demo_link:"https://brainwavesm.netlify.app/",
+  },
+  {
+    name: "Nexabuy",
+    description:
+      "Built a modern e-commerce website with a clean and responsive design using React, TailwindCSS, and Ant Design. Leveraged Zustand for efficient state management and React Router DOM for smooth navigation. ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ant design",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-router-dom",
+        color: "violet-gradient",
+      },
+      {
+        name: "zustand",
+        color: "green-pink-gradient",
+      },
+    ],
+    image: nexa,
+    source_code_link: "https://github.com/sahilphantom/nexabuy_app",
+    live_demo_link:"https://nexabuy.netlify.app/",
+  },
+  {
+    name: "Dangila Landing Page",
+    description:
+      "A modern and visually captivating landing page for a cosmetic product brand, designed to highlight features, and user engagement. Built using React.js and TailwindCSS.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+     
+    ],
+    image: dangila,
+    source_code_link: "https://github.com/sahilphantom/dangila_landing_page",
+    live_demo_link:"https://dangila.netlify.app/",
   },
  
 ];

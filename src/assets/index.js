@@ -30,6 +30,10 @@ import img4 from "./github.webp";
 import Bwave from "./brainwave.png";
 import Hdoc from "./healthdoc.png";
 import Exlink from "./external-link.png";
+import nexa from "./nexa.png";
+import dangila from "./dangila.png";
+
+
 
 export {
   mobile,
@@ -57,4 +61,6 @@ export {
   img2,
   img3,
   img4,
+  nexa,
+  dangila,
 };
