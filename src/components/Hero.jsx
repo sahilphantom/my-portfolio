@@ -5,12 +5,13 @@ import { motion } from "framer-motion"
 
 import { styles } from "../styles"
 import BackgroundLines from "./BackgroundLines"
+import BackgroundPaths from "./BackgroundPaths"
 
 const Hero = () => {
 
   return (
     <section className={`relative border-solid border-b-2 border-[#915EFF]  w-full h-screen mx-auto overflow-hidden`}>
-<BackgroundLines />
+<BackgroundPaths />
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
