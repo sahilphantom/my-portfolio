@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,6 +13,14 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
 }
 
 .hash-span {
@@ -33,12 +43,41 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.indigo-gradient {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(79, 70, 229, 0.2) 100%);
+  color: rgb(96 165 250);
+  border-radius: 50px;
+  padding: 0.3rem;
+}
+
+.rose-gradient {
+  background: linear-gradient(135deg, rgba(251, 113, 133, 0.2) 0%, rgba(244, 63, 94, 0.2) 100%);
+  color: #e11d48;
+  border-radius: 50px;
+  padding: 0.3rem;
+}
+
+.indigo-rose-gradient {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(244, 63, 94, 0.2) 100%);
+  color: #8b5cf6;
+  border-radius: 50px;
+  padding: 0.3rem;
+}
+
 .violet-gradient {
   background-color: rgb(168 85 247 / 0.1);
   opacity: 1;
   color: rgb(192 132 252);
   border-radius: 50px;
 padding: 0.3rem;
+}
+
+.emerald-gradient {
+  background-color: rgb(16 185 129 / 0.1);
+  opacity: 1;
+  color: rgb(52 211 153);
+  border-radius: 50px;
+  padding: 0.3rem;
 }
 
 .green-pink-gradient {

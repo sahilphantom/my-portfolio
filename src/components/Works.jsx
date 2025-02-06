@@ -34,7 +34,7 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -55,7 +55,7 @@ const ProjectCard = ({
             
             </div>
         </div>
-          </div>
+          </div> */}
           
         </div>
 
@@ -73,6 +73,16 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
+        </div>
+        <div className="flex mt-5 flex-wrap justify-between">
+          <button className="px-4 py-1 indigo-gradient  rounded-full " 
+          onClick={() => window.open(live_demo_link, "_blank")}>
+            #Live Demo
+          </button>
+          <button   className="px-3 py-1 indigo-gradient  rounded-full "
+           onClick={() => window.open(source_code_link, "_blank")}>
+            #View Code 
+          </button>
         </div>
       </div>
     </motion.div>

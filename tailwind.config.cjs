@@ -4,6 +4,10 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        'pacifico': ['Pacifico', 'cursive'],
+        'serif': ['Playfair Display', 'serif'],
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
