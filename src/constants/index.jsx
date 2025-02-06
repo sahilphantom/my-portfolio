@@ -171,9 +171,9 @@ const experiences = [
     icon: Github,
     iconBg: "#eee",
     points: [
-      "Learned version control and collaboration using Git.",
+      "Learned version control and collaboration using Github.",
       "Managed code repositories and tracked changes effectively.",
-      "Collaborated with teams on projects through Git workflows like branching and merging."
+      "Collaborated with teams on projects through Github workflows like branching and merging."
     ],
   },
   {
