@@ -33,7 +33,7 @@ const Github = (props) => (
 
 const Footer = () => {
   return (
-    <footer className="w-full px-4 sm:px-6 md:px-12 py-8 sm:py-12 md:py-20 bg-[#000] border-solid border-t-2 border-[#915EFF]">
+    <footer className="w-full px-4 sm:px-6 md:px-12 py-8 sm:py-12 md:py-20 bg-[#000] border-solid border-t-[1px] border-[#915EFF]">
       <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4">
         {/* Left - Logo */}
         <div className="flex items-center gap-2">
