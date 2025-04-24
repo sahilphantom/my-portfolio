@@ -152,7 +152,7 @@ export default function HeroGeometric({ badge = "MERN Developer" }) {
 
           <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
             <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              I create visually stunning and interactive web applications as a frontend developer.
+              I create visually stunning and interactive web applications as a MERN developer.
             </p>
           </motion.div>
         </div>
