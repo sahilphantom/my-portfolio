@@ -55,7 +55,7 @@ function ElegantShape({ className, delay = 0, width = 400, height = 100, rotate 
   )
 }
 
-export default function HeroGeometric({ badge = "Frontend Developer" }) {
+export default function HeroGeometric({ badge = "MERN Developer" }) {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i) => ({
