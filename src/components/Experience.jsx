@@ -63,7 +63,7 @@ const Experience = () => {
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-        Journey of my front end Development.
+        Journey of my Full Stack Web Development.
         </h2>
       </div>
 

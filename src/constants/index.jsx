@@ -22,6 +22,9 @@ import {
   creator,
   nexa,
   dangila,
+  node,
+  express,
+  mongo,
 } from "../assets";
 import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -44,11 +47,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Web Development",
+    title: "Frontend Development",
     icon: web,
   },
   {
-    title: "UI/UX Implementation",
+    title: "API Integration",
     icon: mobile,
   },
   {
@@ -56,7 +59,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Interactive Animations",
+    title: "Backend Development",
     icon: creator,
   },
 ];
@@ -98,6 +101,18 @@ const technologies = [
   {
     name: "git",
     icon: img4,
+  },
+  {
+    name: "node",
+    icon: node,
+  },
+  {
+    name: "express",
+    icon: express,
+  },
+  {
+    name: "mongo",
+    icon: mongo,
   },
   // {
   //   name: "Material Ui",
@@ -177,15 +192,36 @@ const experiences = [
     ],
   },
   {
-    title: "Ant Design",
-    icon: Ant, 
+    title: "Node.js",
+    icon: node, 
     iconBg: "#000",
     points: [
-      "Built professional-grade user interfaces using Ant Design components.",
-      "Streamlined design processes with pre-built, customizable UI elements.",
-      "Focused on creating scalable and consistent design systems."
+      "Developed fast and scalable server-side applications using Node.js.",
+"Leveraged asynchronous, event-driven architecture to handle high-concurrency workloads efficiently.",
+"Integrated backend services and APIs to ensure smooth frontend-backend communication."
     ],
   },
+  {
+    title: "Express.js",
+    icon: express, 
+    iconBg: "#000",
+    points: [
+      "Built RESTful APIs and middleware logic with Express.js for robust backend infrastructure.",
+"Implemented route handling, authentication, and data validation to support secure and scalable applications.",
+"Optimized server performance through modular architecture and efficient request handling."
+    ],
+  },
+  {
+    title: "MongoDB",
+    icon: mongo, 
+    iconBg: "#000",
+    points: [
+      "Designed and managed flexible, schema-less databases using MongoDB.",
+"Implemented CRUD operations, indexing, and aggregation pipelines for efficient data querying and storage.",
+"Ensured data integrity and performance by using Mongoose for schema modeling and validation."
+    ],
+  },
+  
   // {
   //   title: "Material-UI",
   //   icon: Mui,
