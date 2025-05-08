@@ -47,9 +47,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 mb-8 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled frontend developer with expertise in React, JavaScript, and modern UI frameworks. 
-  I specialize in creating dynamic, responsive, and visually appealing web applications. 
-  Let's collaborate to turn your ideas into seamless digital experiences!
+       I'm a skilled full-stack web developer with expertise in React, JavaScript, Node.js, and
+        modern UI frameworks like TailwindCSS and Ant Design. I specialize in building dynamic, responsive,
+         and visually appealing web applications, backed by robust, scalable backend solutions using Express.js and MongoDB. 
+         From crafting intuitive user interfaces to designing efficient APIs, I focus on delivering seamless digital experiences that perform at scale. Let's collaborate to bring your ideas to life.
       </motion.p>
        {/* View Resume Button */}
        <a
