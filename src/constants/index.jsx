@@ -25,6 +25,7 @@ import {
   node,
   express,
   mongo,
+  urduLens,
 } from "../assets";
 import { SiHtml5 , SiCss3 , SiJavascript , SiReact , SiTailwindcss , SiAntdesign , SiFramer, SiGithub } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -262,6 +263,36 @@ const testimonials = [
 ];
 
 const projects = [
+   {
+    name: "UeduLens",
+    description:
+      "Built a responsive web application for real-time Urdu text recognition using React, TailwindCSS, and Framer Motion. Collaborated on an end-to-end OCR system with a Python backend leveraging CNN, LSTM, and CTC for accurate Urdu script extraction.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Framer Motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-router-dom",
+        color: "violet-gradient",
+      },
+        {
+        name: "axios",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: urduLens,
+    source_code_link: "https://github.com/sahilphantom/urdu_Lens",
+    live_demo_link:"https:/urdulens2.netlify.app/",
+  },
   {
     name: "HealthDoc",
     description:

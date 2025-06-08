@@ -9,6 +9,8 @@ import close from "./close.svg";
 import node from "./nodejs.png";
 import express from "./express.png";
 import mongo from "./mongodb.png";
+import urduLens from "./urdulens.png";
+
 
 
 import css from "./tech/css.png";
@@ -70,4 +72,5 @@ export {
   node,
   express,
   mongo,
+  urduLens,
 };
