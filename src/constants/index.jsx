@@ -262,139 +262,107 @@ const testimonials = [
   },
 ];
 
-const projects = [
-   {
+ const projects = [
+  {
     name: "UeduLens",
-    description:
-      "Built a responsive web application for real-time Urdu text recognition using React, TailwindCSS, and Framer Motion. Collaborated on an end-to-end OCR system with a Python backend leveraging CNN, LSTM, and CTC for accurate Urdu script extraction.",
+    description: "Real-time Urdu OCR web app with modern UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-router-dom",
-        color: "violet-gradient",
-      },
-        {
-        name: "axios",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "text-blue-500" },
+      { name: "Framer Motion", color: "text-green-500" },
+      { name: "Tailwind CSS", color: "text-pink-500" },
+      { name: "react-router-dom", color: "text-violet-500" },
+      { name: "axios", color: "text-pink-500" },
     ],
     image: urduLens,
     source_code_link: "https://github.com/sahilphantom/urdu_Lens",
-    live_demo_link:"https:/urdulens2.netlify.app/",
+    live_demo_link: "https://urdulens2.netlify.app/",
+    features: [
+      "Real-time Urdu text detection",
+      "Smooth transitions with Framer Motion",
+      "Fully responsive UI design",
+    ],
+    fullDescription:
+      "Built a responsive web application for real-time Urdu text recognition using React, TailwindCSS, and Framer Motion. Collaborated on an end-to-end OCR system with a Python backend leveraging CNN, LSTM, and CTC for accurate Urdu script extraction.",
   },
   {
     name: "HealthDoc",
-    description:
-      "A professionally crafted healthcare web interface featuring responsive design, dynamic animations, and an intuitive user experience.",
+    description: "Responsive healthcare UI with animations.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-router-dom",
-        color: "violet-gradient",
-      },
+      { name: "react", color: "text-blue-500" },
+      { name: "Framer Motion", color: "text-green-500" },
+      { name: "Tailwind CSS", color: "text-pink-500" },
+      { name: "react-router-dom", color: "text-violet-500" },
     ],
     image: Hdoc,
     source_code_link: "https://github.com/sahilphantom/Healthdoc",
-    live_demo_link:"https://healthdoc12.netlify.app/",
+    live_demo_link: "https://healthdoc12.netlify.app/",
+    features: [
+      "Healthcare interface design",
+      "Dynamic animations for interactivity",
+      "Mobile-friendly layout",
+    ],
+    fullDescription:
+      "A professionally crafted healthcare web interface featuring responsive design, dynamic animations, and an intuitive user experience.",
   },
   {
     name: "Brainwave",
-    description:
-      "A visually appealing and modern web application designed with dynamic styling and responsive layouts for seamless performance across all screen sizes",
+    description: "Modern and stylish responsive UI app.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-router-dom",
-        color: "violet-gradient",
-      },
+      { name: "react", color: "text-blue-500" },
+      { name: "Framer Motion", color: "text-green-500" },
+      { name: "Tailwind CSS", color: "text-pink-500" },
+      { name: "react-router-dom", color: "text-violet-500" },
     ],
     image: Bwave,
     source_code_link: "https://github.com/sahilphantom/brainwave",
-    live_demo_link:"https://brainwavesm.netlify.app/",
+    live_demo_link: "https://brainwavesm.netlify.app/",
+    features: [
+      "Visually appealing UI",
+      "Smooth page transitions",
+      "Responsive design for all screen sizes",
+    ],
+    fullDescription:
+      "A visually appealing and modern web application designed with dynamic styling and responsive layouts for seamless performance across all screen sizes.",
   },
   {
     name: "Nexabuy",
-    description:
-      "Built a modern e-commerce website with a clean and responsive design using React, TailwindCSS, and Ant Design. Leveraged Zustand for efficient state management and React Router DOM for smooth navigation. ",
+    description: "E-commerce site with state management.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "ant design",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-router-dom",
-        color: "violet-gradient",
-      },
-      {
-        name: "zustand",
-        color: "green-pink-gradient",
-      },
+      { name: "react", color: "text-blue-500" },
+      { name: "ant design", color: "text-green-500" },
+      { name: "Tailwind CSS", color: "text-pink-500" },
+      { name: "react-router-dom", color: "text-violet-500" },
+      { name: "zustand", color: "text-pink-600" },
     ],
     image: nexa,
     source_code_link: "https://github.com/sahilphantom/nexabuy_app",
-    live_demo_link:"https://nexabuy.netlify.app/",
+    live_demo_link: "https://nexabuy.netlify.app/",
+    features: [
+      "Product listing & cart system",
+      "Responsive layout with Ant Design",
+      "State management with Zustand",
+    ],
+    fullDescription:
+      "Built a modern e-commerce website with a clean and responsive design using React, TailwindCSS, and Ant Design. Leveraged Zustand for efficient state management and React Router DOM for smooth navigation.",
   },
   {
     name: "Dangila Landing Page",
-    description:
-      "A modern and visually captivating landing page for a cosmetic product brand, designed to highlight features, and user engagement. Built using React.js and TailwindCSS.",
+    description: "Cosmetics brand landing page UI.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-     
+      { name: "react", color: "text-blue-500" },
+      { name: "Tailwind CSS", color: "text-pink-500" },
     ],
     image: dangila,
     source_code_link: "https://github.com/sahilphantom/dangila_landing_page",
-    live_demo_link:"https://dangila.netlify.app/",
+    live_demo_link: "https://dangila.netlify.app/",
+    features: [
+      "Attractive cosmetic product layout",
+      "Brand-focused landing design",
+      "Clean responsive design",
+    ],
+    fullDescription:
+      "A modern and visually captivating landing page for a cosmetic product brand, designed to highlight features and user engagement. Built using React.js and TailwindCSS.",
   },
- 
 ];
 
 export { services, technologies, experiences, testimonials, projects };
