@@ -1,10 +1,10 @@
 import { clsx } from "clsx"
 
 const badgeVariants = {
-  default: "bg-purple-600 text-white hover:bg-purple-700",
-  secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
-  destructive: "bg-red-600 text-white hover:bg-red-700",
-  outline: "text-gray-800 border border-gray-300",
+  default: "bg-black text-white hover:bg-black border border-white",
+  secondary: "bg-black text-white border border-white hover:bg-black",
+  destructive: "bg-black text-white border border-white hover:bg-black",
+  outline: "bg-black text-white border border-white hover:bg-black",
 }
 
 function Badge({ className, variant = "default", ...props }) {

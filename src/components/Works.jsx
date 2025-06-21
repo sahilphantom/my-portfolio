@@ -1,5 +1,3 @@
-"use client"
-
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ExternalLink, Github, ChevronDown } from "lucide-react"
@@ -7,6 +5,7 @@ import { Badge } from "./ui/Badge"
 import { Button } from "./ui/Button"
 import { Card, CardContent } from "./ui/Card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/Dialog"
+import { Bwave, dangila, dbcli, Hdoc, nexa, urduLens } from "../assets/index"
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null)
@@ -18,285 +17,288 @@ export default function Projects() {
   }
 
   const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      shortDescription: "A full-featured e-commerce platform with product management.",
-      description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["C++", "Qt", "SQLite", "CMake"],
-      features: [
-        "Inventory management system",
-        "Real-time stock tracking",
-        "Secure payment processing",
-        "Order management dashboard",
-        "Customer analytics",
-      ],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This e-commerce platform provides businesses with a complete solution for selling products online. Built with C++ and Qt for high performance and cross-platform compatibility. Features include a responsive design, product catalog with filtering and search capabilities, shopping cart functionality, secure checkout integration, user authentication, and an admin dashboard for managing products, orders, and customers.",
-    },
-    {
-      id: 2,
-      title: "Task Management System",
-      shortDescription: "A collaborative task management application with real-time updates.",
-      description: "A collaborative task management application with real-time updates and team workspaces.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["Java", "Spring Boot", "React", "PostgreSQL"],
-      features: [
-        "Real-time collaboration",
-        "Task dependencies",
-        "Resource allocation",
-        "Progress tracking",
-        "Team management",
-      ],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This task management system helps teams organize and track their work efficiently. Built with Java Spring Boot for the backend and React for the frontend, it provides robust task management capabilities. Features include task creation and assignment, due dates and reminders, progress tracking, file attachments, comments and discussions, team workspaces, and real-time updates.",
-    },
-    {
-      id: 3,
-      title: "System Resource Monitor",
-      shortDescription: "A comprehensive system monitoring tool with real-time analytics.",
-      description: "A comprehensive system monitoring tool with real-time analytics and performance tracking.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["C++", "Python", "Qt", "Linux"],
-      features: [
-        "CPU/Memory monitoring",
-        "Process management",
-        "Network analytics",
-        "Disk usage tracking",
-        "Performance alerts",
-      ],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This system resource monitor provides real-time insights into system performance. Built primarily in C++ with Python for data analysis, it offers comprehensive monitoring capabilities. The application tracks CPU usage, memory consumption, network traffic, and disk operations, providing detailed analytics and alerts for system administrators.",
-    },
-    {
-      id: 4,
-      title: "Compiler Design Project",
-      shortDescription: "A custom programming language compiler with optimization features.",
-      description: "A custom programming language compiler with advanced optimization features.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["C", "LLVM", "Assembly", "Python"],
-      features: ["Lexical analysis", "Syntax parsing", "Code optimization", "Error handling", "Assembly generation"],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This compiler project implements a custom programming language with modern features and optimizations. Built using C and LLVM, it includes comprehensive error handling and code optimization capabilities. The compiler performs lexical analysis, syntax parsing, semantic analysis, and generates optimized assembly code.",
-    },
-    {
-      id: 5,
-      title: "Distributed Database System",
-      shortDescription: "A distributed database system with high availability.",
-      description: "A distributed database system with high availability and fault tolerance.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["C++", "Rust", "gRPC", "Redis"],
-      features: ["Data replication", "Sharding", "Fault tolerance", "Load balancing", "Transaction management"],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This distributed database system provides high availability and fault tolerance for large-scale applications. Built with C++ and Rust for performance, it implements advanced features such as data replication, sharding, and automatic failover. The system includes comprehensive monitoring and management tools.",
-    },
-    {
-      id: 6,
-      title: "Neural Network Framework",
-      shortDescription: "A deep learning framework optimized for performance.",
-      description: "A deep learning framework with CUDA acceleration and optimization features.",
-      image: "https://via.placeholder.com/600x400",
-      tags: ["C++", "CUDA", "Python", "CMake"],
-      features: [
-        "CUDA acceleration",
-        "Automatic differentiation",
-        "Model optimization",
-        "Training pipelines",
-        "Performance profiling",
-      ],
-      demoLink: "#",
-      githubLink: "#",
-      fullDescription:
-        "This neural network framework provides high-performance deep learning capabilities. Built primarily in C++ with CUDA acceleration, it offers comprehensive tools for building and training neural networks. Features include automatic differentiation, model optimization, and detailed performance profiling.",
-    },
-  ]
+  {
+    id: 1,
+    title: "UeduLens",
+    shortDescription: "Real-time Urdu OCR web app using modern frontend and deep learning backend.",
+    description: "Built an Urdu OCR web app with React and Python that extracts text using CNN, LSTM, and CTC.",
+    image: urduLens,
+    tags: ["React", "Tailwind CSS", "Framer Motion", "React Router", "Axios"],
+    features: [
+      "Real-time Urdu text recognition",
+      "Smooth animations with Framer Motion",
+      "Responsive UI design",
+    ],
+    demoLink: "https://urdulens2.netlify.app/",
+    githubLink: "https://github.com/sahilphantom/urdu_Lens",
+    fullDescription:
+      "UeduLens is a web application for real-time Urdu text recognition. Built with React, Tailwind CSS, and Framer Motion on the frontend, and a Python backend utilizing CNN, LSTM, and CTC for accurate script recognition. It features a clean, responsive design and smooth animations to enhance user experience.",
+  },
+  {
+    id: 2,
+    title: "HealthDoc",
+    shortDescription: "Responsive healthcare interface with animations and intuitive navigation.",
+    description: "A professional healthcare web interface built with React and TailwindCSS.",
+    image: Hdoc,
+    tags: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
+    features: [
+      "Healthcare-themed layout",
+      "Smooth transitions",
+      "Mobile-responsive interface",
+    ],
+    demoLink: "https://healthdoc12.netlify.app/",
+    githubLink: "https://github.com/sahilphantom/Healthdoc",
+    fullDescription:
+      "HealthDoc is a sleek healthcare web interface featuring responsive layouts, animated transitions, and intuitive navigation. Built using React and TailwindCSS, it provides a smooth and professional experience for medical-related services or platforms.",
+  },
+  {
+    id: 3,
+    title: "Brainwave",
+    shortDescription: "Modern UI web app with dynamic styling and full responsiveness.",
+    description: "A visually attractive modern web app built with React, Tailwind, and Framer Motion.",
+    image: Bwave,
+    tags: ["React", "Tailwind CSS", "Framer Motion", "React Router"],
+    features: [
+      "Fully responsive layout",
+      "Engaging motion effects",
+      "Clean UI design",
+    ],
+    demoLink: "https://brainwavesm.netlify.app/",
+    githubLink: "https://github.com/sahilphantom/brainwave",
+    fullDescription:
+      "Brainwave is a visually modern web application that uses TailwindCSS and Framer Motion to deliver a responsive and stylish user experience across all devices. Ideal for showcasing creative digital concepts.",
+  },
+  {
+    id: 4,
+    title: "Nexabuy",
+    shortDescription: "E-commerce platform with clean design and state management.",
+    description: "Modern e-commerce app using Zustand for state and Ant Design for layout components.",
+    image: nexa,
+    tags: ["React", "Tailwind CSS", "Ant Design", "React Router", "Zustand"],
+    features: [
+      "Product management UI",
+      "Responsive cart functionality",
+      "Modern design using Ant Design",
+    ],
+    demoLink: "https://nexabuy.netlify.app/",
+    githubLink: "https://github.com/sahilphantom/nexabuy_app",
+    fullDescription:
+      "Nexabuy is a modern e-commerce website developed with React, TailwindCSS, Ant Design, and Zustand. It features a seamless cart, clean UI, and smooth navigation with React Router DOM.",
+  },
+  {
+    id: 5,
+    title: "Dangila Landing Page",
+    shortDescription: "Landing page for a cosmetic brand with engaging design.",
+    description: "A captivating cosmetic brand landing page using React and Tailwind.",
+    image: dangila,
+    tags: ["React", "Tailwind CSS"],
+    features: [
+      "Brand-focused layout",
+      "Smooth and clean design",
+      "Highly responsive UI",
+    ],
+    demoLink: "https://dangila.netlify.app/",
+    githubLink: "https://github.com/sahilphantom/dangila_landing_page",
+    fullDescription:
+      "Dangila is a single-page landing site for a cosmetic brand, designed with clean sections and modern UI aesthetics. Built with React and TailwindCSS to offer responsive and engaging user interaction.",
+  },
+  {
+    id: 6,
+    title: "DB Backup CLI Tool",
+    shortDescription: "Node.js CLI tool for automated database backups and restores.",
+    description: "CLI tool to back up and restore databases like MySQL, PostgreSQL, MongoDB, with compression and cloud/local storage.",
+    image: dbcli,
+    tags: ["Node.js", "Yargs", "Inquirer", "Chalk", "Ora", "Boxen"],
+    features: [
+      "Backup and restore for MySQL, PostgreSQL, MongoDB, SQLite",
+      "Humanized CLI with Inquirer and colorized feedback",
+      "Compression and local/cloud storage support",
+      "Automatic scheduling and logging",
+      "Summarized reports with boxen UI",
+    ],
+    demoLink: "#",
+    githubLink: "https://github.com/sahilphantom/db-backup-cli",
+    fullDescription:
+      "A robust Node.js CLI tool that automates backups and restores for multiple databases (MySQL, PostgreSQL, MongoDB, SQLite). Features interactive prompts via Inquirer, real-time feedback with Ora spinners, colorized logging using Chalk, and post-operation summary reports with Boxen. Supports local and cloud storage along with compressed backup files.",
+  },
+];
+
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+   <section id="projects" className="py-20 bg-black text-white">
+  <div className="container mx-auto px-4">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={fadeIn}
+      className="text-center mb-16"
+    >
+      <Badge variant="outline" className="mb-4 text-white border-white">
+        Portfolio
+      </Badge>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+      <div className="w-20 h-1 bg-purple-600 mx-auto"></div>
+    </motion.div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((project, index) => (
         <motion.div
+          key={project.id}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
           variants={fadeIn}
-          className="text-center mb-16"
         >
-          <Badge variant="outline" className="mb-4">
-            Portfolio
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-purple-600 mx-auto"></div>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              variants={fadeIn}
-            >
-              <Card
-                className={`group h-full cursor-pointer transition-all duration-300 hover:shadow-lg ${
-                  expandedProject === project.id ? "ring-2 ring-purple-600" : ""
-                }`}
-                onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
-              >
-                <CardContent className="p-0">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={project.image || "https://via.placeholder.com/600x400"}
-                      alt={project.title}
-                      className="w-full aspect-video object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/20 p-6 flex flex-col justify-end">
-                      <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
-                      <p className="text-gray-300 text-sm">{project.shortDescription}</p>
-                    </div>
-                  </div>
-
-                  <AnimatePresence>
-                    {expandedProject === project.id && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="p-6 border-t"
-                      >
-                        <div className="space-y-4">
-                          <div className="flex flex-wrap gap-2">
-                            {project.tags.map((tag, i) => (
-                              <Badge key={i} variant="secondary">
-                                {tag}
-                              </Badge>
-                            ))}
-                          </div>
-
-                          <div className="space-y-2">
-                            <h4 className="font-semibold">Key Features:</h4>
-                            <ul className="list-disc list-inside text-sm text-gray-600 space-y-1">
-                              {project.features.map((feature, i) => (
-                                <li key={i}>{feature}</li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          <div className="flex gap-4 pt-2">
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                window.open(project.githubLink, "_blank")
-                              }}
-                            >
-                              <Github className="h-4 w-4 mr-2" />
-                              Code
-                            </Button>
-                            <Button
-                              size="sm"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                window.open(project.demoLink, "_blank")
-                              }}
-                            >
-                              <ExternalLink className="h-4 w-4 mr-2" />
-                              Demo
-                            </Button>
-                            <Button
-                              size="sm"
-                              variant="outline"
-                              onClick={(e) => {
-                                e.stopPropagation()
-                                setSelectedProject(project)
-                              }}
-                            >
-                              Learn More
-                            </Button>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-
-                  <div className="p-4 text-center">
-                    <ChevronDown
-                      className={`w-6 h-6 mx-auto transition-transform duration-300 ${
-                        expandedProject === project.id ? "rotate-180" : ""
-                      }`}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      {selectedProject && (
-        <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-          <DialogContent className="max-w-3xl">
-            <DialogHeader>
-              <DialogTitle>{selectedProject.title}</DialogTitle>
-              <DialogDescription>
-                <div className="flex flex-wrap gap-2 mt-2 mb-4">
-                  {selectedProject.tags.map((tag, i) => (
-                    <Badge key={i} variant="secondary">
-                      {tag}
-                    </Badge>
-                  ))}
+          <Card
+            className={`group h-full cursor-pointer transition-all duration-300 hover:shadow-lg bg-zinc-900 text-white ${
+              expandedProject === project.id ? "ring-2 ring-purple-600" : ""
+            }`}
+            onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+          >
+            <CardContent className="p-0">
+              <div className="relative w-full aspect-video overflow-hidden">
+                <img
+                  src={project.image || "https://via.placeholder.com/600x400"}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/20 p-6 flex flex-col justify-end">
+                  <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                  <p className="text-gray-300 text-sm">{project.shortDescription}</p>
                 </div>
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-4">
-              <img
-                src={selectedProject.image || "https://via.placeholder.com/600x400"}
-                alt={selectedProject.title}
-                className="w-full rounded-md object-cover aspect-video"
-              />
-              <p className="text-gray-600">{selectedProject.fullDescription}</p>
-              <div className="space-y-4">
-                <h4 className="font-semibold">Key Features:</h4>
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
-                  {selectedProject.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
               </div>
-              <div className="flex justify-end gap-4 mt-4">
-                <Button variant="outline" asChild>
-                  <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" />
-                    View Code
-                  </a>
-                </Button>
-                <Button asChild>
-                  <a href={selectedProject.demoLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </a>
-                </Button>
+
+              <AnimatePresence>
+                {expandedProject === project.id && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="p-6 border-t border-gray-700 bg-zinc-800"
+                  >
+                    <div className="space-y-4">
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, i) => (
+                          <Badge key={i} variant="secondary">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+
+                      <div className="space-y-2">
+                        <h4 className="font-semibold">Key Features:</h4>
+                        <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+                          {project.features.map((feature, i) => (
+                            <li key={i}>{feature}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="flex gap-4 pt-2">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            window.open(project.githubLink, "_blank")
+                          }}
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </Button>
+                        <Button
+                          size="sm"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            window.open(project.demoLink, "_blank")
+                          }}
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Demo
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            setSelectedProject(project)
+                          }}
+                        >
+                          Learn More
+                        </Button>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <div className="p-4 text-center">
+                <ChevronDown
+                  className={`w-6 h-6 mx-auto transition-transform duration-300 ${
+                    expandedProject === project.id ? "rotate-180" : ""
+                  }`}
+                />
               </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+
+  {selectedProject && (
+    <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+      <DialogContent className="max-w-3xl bg-zinc-900 text-white">
+        <DialogHeader>
+          <DialogTitle>{selectedProject.title}</DialogTitle>
+          <DialogDescription>
+            <div className="flex flex-wrap gap-2 mt-2 mb-4">
+              {selectedProject.tags.map((tag, i) => (
+                <Badge key={i} variant="secondary">
+                  {tag}
+                </Badge>
+              ))}
             </div>
-          </DialogContent>
-        </Dialog>
-      )}
-    </section>
+          </DialogDescription>
+        </DialogHeader>
+        <div className="space-y-4">
+          <img
+            src={selectedProject.image || "https://via.placeholder.com/600x400"}
+            alt={selectedProject.title}
+            className="w-full rounded-md object-cover aspect-video"
+          />
+          <p className="text-gray-300">{selectedProject.fullDescription}</p>
+          <div className="space-y-4">
+            <h4 className="font-semibold">Key Features:</h4>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              {selectedProject.features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex justify-end gap-4 mt-4">
+            <Button variant="outline" asChild>
+              <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4 mr-2" />
+                View Code
+              </a>
+            </Button>
+            <Button asChild>
+              <a href={selectedProject.demoLink} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="h-4 w-4 mr-2" />
+                Live Demo
+              </a>
+            </Button>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  )}
+</section>
+
   )
 }
