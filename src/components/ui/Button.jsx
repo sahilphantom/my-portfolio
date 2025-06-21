@@ -4,7 +4,7 @@ import { clsx } from "clsx"
 const buttonVariants = {
   variant: {
     default: "bg-purple-600 text-white hover:bg-purple-700",
-    destructive: "bg-black text-white border border-white hover:bg-black",
+    destructive: "bg-black text-white  hover:bg-black",
     outline: "bg-black text-white border border-white hover:bg-black",
     secondary: "bg-black text-white border border-white hover:bg-black",
     ghost: "bg-black text-white border border-white hover:bg-black",
