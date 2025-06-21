@@ -2,7 +2,14 @@ import React from "react"
 import { clsx } from "clsx"
 
 const Card = React.forwardRef(({ className, ...props }, ref) => (
-  <div ref={ref} className={clsx("rounded-lg border bg-white text-gray-950 shadow-sm", className)} {...props} />
+  <div
+    ref={ref}
+    className={clsx(
+      "rounded-lg border border-white bg-black text-white shadow-sm",
+      className
+    )}
+    {...props}
+  />
 ))
 Card.displayName = "Card"
 
@@ -12,12 +19,12 @@ const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
 CardHeader.displayName = "CardHeader"
 
 const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
-  <h3 ref={ref} className={clsx("text-2xl font-semibold leading-none tracking-tight", className)} {...props} />
+  <h3 ref={ref} className={clsx("text-2xl font-semibold leading-none tracking-tight text-white", className)} {...props} />
 ))
 CardTitle.displayName = "CardTitle"
 
 const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
-  <p ref={ref} className={clsx("text-sm text-gray-500", className)} {...props} />
+  <p ref={ref} className={clsx("text-sm text-white/70", className)} {...props} />
 ))
 CardDescription.displayName = "CardDescription"
 

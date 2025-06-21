@@ -125,7 +125,7 @@ export default function Projects() {
 
 
   return (
-   <section id="projects" className="py-20 bg-black text-white">
+  <section id="projects" className="py-20 bg-black text-white">
   <div className="container mx-auto px-4">
     <motion.div
       initial="hidden"
@@ -135,7 +135,7 @@ export default function Projects() {
       variants={fadeIn}
       className="text-center mb-16"
     >
-      <Badge variant="outline" className="mb-4 text-white border-white">
+      <Badge variant="outline" className="mb-4 text-white border-white bg-black">
         Portfolio
       </Badge>
       <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
@@ -153,7 +153,7 @@ export default function Projects() {
           variants={fadeIn}
         >
           <Card
-            className={`group h-full cursor-pointer transition-all duration-300 hover:shadow-lg bg-zinc-900 text-white ${
+            className={`group h-full cursor-pointer transition-all duration-300 hover:shadow-lg bg-black text-white ${
               expandedProject === project.id ? "ring-2 ring-purple-600" : ""
             }`}
             onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
@@ -167,7 +167,7 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-black/20 p-6 flex flex-col justify-end">
                   <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
-                  <p className="text-gray-300 text-sm">{project.shortDescription}</p>
+                  <p className="text-white text-sm">{project.shortDescription}</p>
                 </div>
               </div>
 
@@ -178,12 +178,12 @@ export default function Projects() {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="p-6 border-t border-gray-700 bg-zinc-800"
+                    className="p-6 border-t border-white bg-black"
                   >
                     <div className="space-y-4">
                       <div className="flex flex-wrap gap-2">
                         {project.tags.map((tag, i) => (
-                          <Badge key={i} variant="secondary">
+                          <Badge key={i} variant="outline" className="text-white border-white bg-black">
                             {tag}
                           </Badge>
                         ))}
@@ -191,7 +191,7 @@ export default function Projects() {
 
                       <div className="space-y-2">
                         <h4 className="font-semibold">Key Features:</h4>
-                        <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+                        <ul className="list-disc list-inside text-sm text-white space-y-1">
                           {project.features.map((feature, i) => (
                             <li key={i}>{feature}</li>
                           ))}
@@ -202,6 +202,7 @@ export default function Projects() {
                         <Button
                           size="sm"
                           variant="outline"
+                          className="bg-black border-white text-white hover:bg-black hover:text-white"
                           onClick={(e) => {
                             e.stopPropagation()
                             window.open(project.githubLink, "_blank")
@@ -212,6 +213,7 @@ export default function Projects() {
                         </Button>
                         <Button
                           size="sm"
+                          className="bg-black border border-white text-white hover:bg-black hover:text-white"
                           onClick={(e) => {
                             e.stopPropagation()
                             window.open(project.demoLink, "_blank")
@@ -223,6 +225,7 @@ export default function Projects() {
                         <Button
                           size="sm"
                           variant="outline"
+                          className="bg-black border-white text-white hover:bg-black hover:text-white"
                           onClick={(e) => {
                             e.stopPropagation()
                             setSelectedProject(project)
@@ -252,13 +255,13 @@ export default function Projects() {
 
   {selectedProject && (
     <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-      <DialogContent className="max-w-3xl bg-zinc-900 text-white">
+      <DialogContent className="max-w-3xl bg-black text-white border border-white">
         <DialogHeader>
           <DialogTitle>{selectedProject.title}</DialogTitle>
           <DialogDescription>
             <div className="flex flex-wrap gap-2 mt-2 mb-4">
               {selectedProject.tags.map((tag, i) => (
-                <Badge key={i} variant="secondary">
+                <Badge key={i} variant="outline" className="text-white border-white bg-black">
                   {tag}
                 </Badge>
               ))}
@@ -271,23 +274,23 @@ export default function Projects() {
             alt={selectedProject.title}
             className="w-full rounded-md object-cover aspect-video"
           />
-          <p className="text-gray-300">{selectedProject.fullDescription}</p>
+          <p className="text-white">{selectedProject.fullDescription}</p>
           <div className="space-y-4">
             <h4 className="font-semibold">Key Features:</h4>
-            <ul className="list-disc list-inside text-gray-300 space-y-2">
+            <ul className="list-disc list-inside text-white space-y-2">
               {selectedProject.features.map((feature, i) => (
                 <li key={i}>{feature}</li>
               ))}
             </ul>
           </div>
           <div className="flex justify-end gap-4 mt-4">
-            <Button variant="outline" asChild>
+            <Button variant="outline" className="bg-black border-white text-white hover:bg-black hover:text-white" asChild>
               <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
                 View Code
               </a>
             </Button>
-            <Button asChild>
+            <Button className="bg-black border border-white text-white hover:bg-black hover:text-white" asChild>
               <a href={selectedProject.demoLink} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="h-4 w-4 mr-2" />
                 Live Demo
@@ -299,6 +302,7 @@ export default function Projects() {
     </Dialog>
   )}
 </section>
+
 
   )
 }

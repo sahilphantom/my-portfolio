@@ -4,11 +4,11 @@ import { clsx } from "clsx"
 const buttonVariants = {
   variant: {
     default: "bg-purple-600 text-white hover:bg-purple-700",
-    destructive: "bg-red-600 text-white hover:bg-red-700",
-    outline: "border border-gray-300 bg-white hover:bg-gray-100",
-    secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
-    ghost: "hover:bg-gray-100",
-    link: "text-purple-600 underline-offset-4 hover:underline",
+    destructive: "bg-black text-white border border-white hover:bg-black",
+    outline: "bg-black text-white border border-white hover:bg-black",
+    secondary: "bg-black text-white border border-white hover:bg-black",
+    ghost: "bg-black text-white border border-white hover:bg-black",
+    link: "text-white underline-offset-4 hover:underline",
   },
   size: {
     default: "h-10 px-4 py-2",
@@ -24,7 +24,7 @@ const Button = React.forwardRef(
     return (
       <Comp
         className={clsx(
-          "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           buttonVariants.variant[variant],
           buttonVariants.size[size],
           className,
